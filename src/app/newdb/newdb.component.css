@@ -1,0 +1,28 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 45% 55% ;
+    grid-gap: 10px 15px;
+  }
+.load {
+  grid-column: 1;
+  grid-row: 1;
+  border: 1px solid;
+  display: inline-block;
+  text-align: left;
+}
+  
+.format {
+  grid-column: 2;
+  grid-row: 1;
+  border: 1px solid;
+  display: inline-block;
+  text-align: left;
+}
+
+.eval {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  border: 1px solid;
+  display: inline-block;
+}

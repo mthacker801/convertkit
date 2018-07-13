@@ -1,0 +1,39 @@
+<!--<div class="analyze">
+    <h3>Pro Analysis</h3>
+</div>
+<!-- 
+<dx-box direction='row'>
+    <dxi-item [ratio]='1'>
+      <h3 *ngIf='!dataIn' style='text-align:center;'>Waiting for Data...</h3>
+      <h3 style='text-align:center;' *ngIf='dataIn'>Analysis For: {{analysisData.CompanyName[0].owner}}</h3>
+  
+      <dx-data-grid style='padding: 3px;' *ngIf='dataIn' #grid [dataSource]='countData' [showBorders]='true' [showRowLines]='true' [showColumnLines]='true' [rowAlternationEnabled]='true' (onSelectionChanged)='getDataList($event)'>
+        
+        <dxo-search-panel [visible]='true' [width]='240' placeholder='Search for Datapoint...'></dxo-search-panel>
+        <dxo-export [enabled]='true' fileName='{{proAnalysisData.CompanyName[0].owner}}_Pro_Analysis' [allowExportSelectedData]='false'></dxo-export>
+        <dxo-selection mode='single'></dxo-selection>
+        
+        <dxi-column alignment='center' caption='Module Name' dataField="Name"></dxi-column>
+        <dxi-column alignment='center' caption='Count' dataField="Count"></dxi-column>
+  
+        <div *dxTemplate="let d of 'cellButtonTemplate'">
+          <dx-button type='default' text='Show List' (onClick)='getDataList($data)'></dx-button>
+        </div>
+      </dx-data-grid>
+    </dxi-item>
+  </dx-box>
+  <dx-box direction='row'>
+    <dxi-item [ratio]='1'>
+      <h3 *ngIf='!dataToDisplay.length' style='text-align: center;'> Waiting For List Data Analysis</h3>
+      <h3 *ngIf='dataToDisplay.length' style='text-align: center;'> {{displayedID}}_Analysis</h3>
+        <dx-data-grid style='padding:3px;text-align:center;' *ngIf='dataIn' #grid [dataSource]='dataToDisplay' [showBorders]='true' [showRowLines]='true' [showColumnLines]='true' [rowAlternationEnabled]='true'>
+        
+          <dxo-search-panel [visible]='true' [width]='240' placeholder='Search for Datapoint...'></dxo-search-panel>
+          <dxo-export [enabled]='true' fileName='{{displayedID}}_Analysis' [allowExportSelectedData]='false'></dxo-export>
+          <dxo-column-fixing [enabled]='true'></dxo-column-fixing>
+          <dxo-column-chooser [enabled]='true'></dxo-column-chooser>
+          <dxo-paging [pageSize]='15'></dxo-paging>
+          <dxo-pager [showPageSizeSelector]='true' [allowedPageSizes]='[10 , 20, 25]' [showInfo]='true'></dxo-pager>
+        </dx-data-grid>
+    </dxi-item>
+  </dx-box> -->

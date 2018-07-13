@@ -1,0 +1,30 @@
+<main>
+  <div class="grid">
+    <div class="load">
+      <ct-loadfile></ct-loadfile>
+    </div>
+    <div class=format>
+      <ct-fileformat></ct-fileformat>
+    </div>
+    <div class="connect">
+      <ct-connectdb></ct-connectdb>
+    </div>
+<form class="loaddb">
+    <h3>Load Database</h3>
+  <mat-form-field class="loaddb-full-width">
+    <input type="text" placeholder="Database" aria-label="Database" matInput [formControl]="DBProControl" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngFor="let pick of filteredOptions | async" [value]="pick">
+        {{ pick.name }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  <br>
+  <button class="choose" mat-raised-button color="primary">Load Database</button>
+</form>
+<br>
+<div class="eval">
+    <ct-eval></ct-eval>
+</div>
+</div>
+</main>

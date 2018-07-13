@@ -1,0 +1,66 @@
+<!-- <main> -->
+  <div class="grid">
+    <div class="connect">
+      <ct-connectdb></ct-connectdb>
+    </div>
+    <br>
+    <br>
+    <div class="pro">
+      <ct-fixpro></ct-fixpro>
+    </div>
+  
+    <div class="upgrade" direction=row>
+      <div class="selections">
+      <div class="dx-fieldset-header"><b>Upgrade Database</b></div>
+      <div class="dx-field">          
+          <dx-select-box
+            [dataSource]="list"
+            displayExpr="name" 
+            valueExpr="name" 
+            [(ngModel)]="_dbConnData.name"
+            [searchEnabled]="true"
+            placeholder="Database">
+          </dx-select-box>
+      </div>
+    <br>
+    <a>
+      Current Version
+    </a>
+<br>
+<br>
+<div class="dx-fieldset-header">Select New Version</div>
+<div class="dx-field">
+    <dx-select-box 
+      [dataSource]="verList" 
+      displayExpr="ver" 
+      valueExpr="ver" 
+      [(ngModel)]="_dbConnData.ver"
+      [searchEnabled]="true"
+      placeholder="Version">
+    </dx-select-box>
+</div>
+</div>
+  
+    <br>
+      <br>
+      <dx-button text='Upgrade to Desktop' type='default'></dx-button>
+
+    <br>
+    <br>
+
+    <dx-button text='Run Analysis' type='default'></dx-button>
+
+    <br>
+    <br>
+
+    <dx-button text='Generate Data Review' type='default'></dx-button>
+
+  </div>
+  </div>
+  <div class="analyze">
+    <ct-csvreport></ct-csvreport>
+  </div>
+<!-- </main> -->
+<p>
+  [...{{dbNames}}]
+</p>

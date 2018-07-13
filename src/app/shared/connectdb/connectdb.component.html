@@ -1,0 +1,28 @@
+<div class="dx-fieldset-header"><b>Connect Database</b></div>
+<div class="selections">
+<dx-box direction='row'>
+  <dxi-item [ratio]='1'>
+    Server Name: <dx-text-box placeholder='mpd-myBox\SQLInstance' [(ngModel)]='_dbConnData.server'></dx-text-box><br>
+    SQL UserName: <dx-text-box placeholder='Username' [(ngModel)]='_dbConnData.user'></dx-text-box><br>
+    SQL Password: <dx-text-box mode='password' placeholder='Password' [(ngModel)]='_dbConnData.password'></dx-text-box><br>
+    <dx-button id="submit" text='Get Databases' (onClick)='showDbList($event)' type='default'>Get Databases</dx-button>
+    <!-- <dx-button id="dList" text='Get Databases' (onClick)='showDbList()' type='default'></dx-button> -->
+    <div class="dx-fieldset-header"></div>
+    <div class="dx-field">
+      <div class="dx-field-value">
+        <br>
+        <dx-select-box
+          [dataSource]="dbList" 
+          displayExpr="name" 
+          valueExpr="name" 
+          [(ngModel)]="_dbConnData.name"
+          [searchEnabled]="true"
+          placeholder="Database">
+        </dx-select-box>
+      </div>
+    </div>
+  </dxi-item>
+
+</dx-box>
+</div>
+

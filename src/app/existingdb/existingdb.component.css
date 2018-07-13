@@ -1,0 +1,52 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 20% 20% 60%;
+    grid-gap: 10px 15px;
+  }
+  
+  .load {
+    grid-column: 1;
+    grid-row: 1;
+    border: 1px solid;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .format {
+    grid-column: 1;
+    grid-row: 2;
+    border: 1px solid;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .connect {
+    grid-column: 2;
+    grid-row: 1;
+    border: 1px solid;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .loaddb {
+    grid-column: 2;
+    grid-row: 2;
+    border: 1px solid;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .eval {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    border: 1px solid;
+    display: inline-block;
+  }
+  
+  .choose:hover {
+    color: #000;
+  }
+  .currentVersion {
+      border: 1px solid purple ;
+    }

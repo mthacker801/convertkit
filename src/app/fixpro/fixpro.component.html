@@ -1,0 +1,14 @@
+<div class="dx-fieldset-header"><b>Fix Pro</b></div>
+<div class="selections">
+    <dx-select-box 
+      [dataSource]="dbList" 
+      displayExpr="name" 
+      valueExpr="name" 
+      [(ngModel)]="_dbConnData.name"
+      [searchEnabled]="true"
+      placeholder="Database">
+    </dx-select-box>
+    <br>
+    <dx-button text='Prepare Pro' type='default'></dx-button>
+</div>
+
